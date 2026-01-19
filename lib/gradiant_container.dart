@@ -1,13 +1,11 @@
-import 'package:first_app/styled_text.dart';
+
 import 'package:flutter/material.dart';
+import 'package:first_app/dice_roller.dart';
 
 class GradiantContainer extends StatelessWidget{
-  const GradiantContainer(this.color1, this.color2,{super.key});
-
+   const GradiantContainer(this.color1, this.color2,{super.key});
   final Color color1;
   final Color color2;
-
-
 
 
   @override
@@ -21,7 +19,9 @@ class GradiantContainer extends StatelessWidget{
             
           ),
         ),
-        child: StyledText('hello flutter By Dolly !')
+        child:Center(  
+          child: DiceRoller(),
+          ),
       );
   }
 
